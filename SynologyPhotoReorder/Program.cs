@@ -28,13 +28,13 @@ namespace SynologyPhotoReorder
                             string fromFolder = null;
                             string toFolder = null;
                             string excludeFolder = null;
-                            //fromFolder = @"\\{myNas}\photo\PhotoLibrary\temp\";
-                            //fromFolder = @"\\{myNas}\home\photo\$Import\DCIM\Camera\";
-                            //fromFolder = @"\\{myNas}\home\photo\Google Photos Backup\";
-                            //fromFolder = @"\\{myNas}\photo\PhotoLibrary\";
+                            //fromFolder = @"\\[myNas]\photo\PhotoLibrary\temp\";
+                            //fromFolder = @"\\[myNas]\home\photo\$Import\DCIM\Camera\";
+                            //fromFolder = @"\\[myNas]\home\photo\Google Photos Backup\";
+                            //fromFolder = @"\\[myNas]\photo\PhotoLibrary\";
                             fromFolder = @"D:\Downloads\shared";
-                            toFolder = @"\\{myNas}\photo\Shared\";
-                            excludeFolder = @"\\{myNas}\photo\By Me\";
+                            toFolder = @"\\[myNas]\photo\Shared\";
+                            excludeFolder = @"\\[myNas]\photo\By Me\";
 
                             fromFolder = Ask("Where is the From folder: ", fromFolder);
                             toFolder = Ask("Where is the To folder: ", toFolder);
@@ -44,13 +44,13 @@ namespace SynologyPhotoReorder
 
                             break;
                         case '2':
-                            RemoveDuplicateFiles(Ask("Which Folder: ", @"\\{myNas}\photo\PhotoLibrary\"));
+                            RemoveDuplicateFiles(Ask("Which Folder: ", @"\\[myNas]\photo\PhotoLibrary\"));
                             break;
                         case '3':
-                            LocateExactDuplicates(Ask("Which Folder: ", @"\\{myNas}\photo\PhotoLibrary\"));
+                            LocateExactDuplicates(Ask("Which Folder: ", @"\\[myNas]\photo\PhotoLibrary\"));
                             break;
                         case '4':
-                            ReOrderFilesInFolder(Ask("Which Folder: ", @"\\{myNas}\photo\PhotoLibrary\"));
+                            ReOrderFilesInFolder(Ask("Which Folder: ", @"\\[myNas]\photo\PhotoLibrary\"));
                             break;
                         case '0':
                         case 'e':
